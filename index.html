@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão de Crédito Tio Dongo Afinz Visa - Deivid Curcio</title>
+    <meta name="description" content="Conheça o novo Cartão de Crédito Tio Dongo Afinz Visa com parcelamento sem juros, descontos exclusivos e muito mais. Fale direto comigo no WhatsApp!">
+    <style>
+        /* Reset básico e fontes */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        a { text-decoration: none; }
+
+        /* Cabeçalho */
+        header {
+            background-color: #ff6b00; /* Laranja do Tio Dongo */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        header img.logo {
+            height: 80px;
+            margin-bottom: 10px;
+            animation: fadeInDown 1s ease-out;
+        }
+        header h1 {
+            font-size: 2rem;
+            animation: fadeInDown 1.2s ease-out;
+        }
+
+        /* Hero section */
+        .hero {
+            background: linear-gradient(rgba(255,107,0,0.8), rgba(255,107,0,0.8)), url('https://www.visa.com.br/content/dam/VCOM/regional/lac/brazil/media-kits/images/800x450px-afinz-lanca-cartao-de-credito-com-beneficios-parceria-visa.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+
+        /* Seção de benefícios */
+        .benefits {
+            padding: 60px 20px;
+            background-color: white;
+            text-align: center;
+        }
+        .benefits h2 {
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: #ff6b00;
+        }
+        .benefits ul {
+            list-style: none;
+            max-width: 800px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        .benefits li {
+            background: #fff0e6;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            font-size: 1.1rem;
+        }
+        .benefits li strong {
+            display: block;
+            font-size: 1.3rem;
+            color: #ff6b00;
+            margin-bottom: 10px;
+        }
+
+        /* Embed Instagram */
+        .instagram {
+            padding: 60px 20px;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        .instagram h2 {
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: #ff6b00;
+        }
+
+        /* Contato */
+        .contact {
+            padding: 80px 20px;
+            background-color: #ff6b00;
+            color: white;
+            text-align: center;
+        }
+        .contact h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+        .contact p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        .btn-whatsapp {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        .btn-whatsapp:hover {
+            transform: scale(1.1);
+        }
+
+        /* Botão flutuante WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 60px;
+            font-size: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            z-index: 1000;
+            animation: pulse 2s infinite ease-in-out;
+        }
+        .whatsapp-float:hover {
+            animation: none;
+            transform: scale(1.15);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Animações gerais */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        /* Animação de entrada ao scroll */
+        .animate {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .animate.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Delays progressivos nos benefícios */
+        .benefits li:nth-child(1) { transition-delay: 0.1s; }
+        .benefits li:nth-child(2) { transition-delay: 0.3s; }
+        .benefits li:nth-child(3) { transition-delay: 0.5s; }
+        .benefits li:nth-child(4) { transition-delay: 0.7s; }
+
+        /* Container para iframe do Instagram */
+        .instagram-container {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        /* Responsividade aprimorada */
+        @media (max-width: 768px) {
+            header h1 { font-size: 1.5rem; }
+            header img.logo { height: 60px; }
+            .hero h2 { font-size: 1.8rem; }
+            .hero { padding: 60px 20px; }
+            .hero p { font-size: 1rem; }
+            .benefits h2 { font-size: 1.6rem; }
+            .benefits li { padding: 20px; font-size: 1rem; }
+            .instagram h2 { font-size: 1.6rem; }
+            .contact h2 { font-size: 1.8rem; }
+            .contact p { font-size: 1rem; }
+            .btn-whatsapp { padding: 12px 30px; font-size: 1.1rem; }
+        }
+
+        @media (max-width: 480px) {
+            header h1 { font-size: 1.2rem; }
+            header img.logo { height: 50px; }
+            .hero h2 { font-size: 1.5rem; }
+            .hero { padding: 40px 15px; }
+            .benefits { padding: 40px 15px; }
+            .benefits ul { gap: 20px; }
+            .instagram { padding: 40px 15px; }
+            .contact { padding: 60px 15px; }
+            .whatsapp-float { width: 50px; height: 50px; line-height: 50px; font-size: 24px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img class="logo" src="https://scontent.fgig14-2.fna.fbcdn.net/v/t39.30808-6/562353362_1252813540216603_8417607522745444665_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=wy1kql2kcxwQ7kNvwEUjsGA&_nc_oc=Adl3vzJW7Wgh-s576GP0K2CnYgQNcjsrPdzB4cTZodT6nBvSPpFW9mqXfZYENhEDdXemPo5sjDXwfoYapHkmffe9&_nc_zt=23&_nc_ht=scontent.fgig14-2.fna&_nc_gid=iH-45AbN_D_ihx299Wb0vQ&oh=00_AfpKVcyYfNHcwbHQJfY4uo9mIeyW1I9zuSAkvfrg-rqP_g&oe=696E163E" alt="Logo Tio Dongo">
+        <h1>Cartão de Crédito Tio Dongo Afinz Visa</h1>
+    </header>
+
+    <section class="hero">
+        <h2 class="animate">Chegou o novo cartão com muitos benefícios!</h2>
+        <p class="animate">O Supermercado da Família também é o que mais inova... e vem com SEMPRE MAIS E MAIS novidades pra você!<br>
+        Chegou o Cartão de Crédito Tio Dongo Afinz VISA recheado de benefícios.</p>
+    </section>
+
+    <section class="benefits">
+        <h2 class="animate">Principais Benefícios</h2>
+        <ul>
+            <li class="animate"><strong>Parcelamento em até 4x sem juros</strong> nas compras no Tio Dongo</li>
+            <li class="animate"><strong>Programa VIBE</strong> com descontos em diversas marcas parceiras</li>
+            <li class="animate"><strong>Até 70% de desconto</strong> em consultas, exames, medicamentos e cursos (opcional)</li>
+            <li class="animate"><strong>Mais praticidade e carinho</strong> para você e sua família</li>
+        </ul>
+    </section>
+
+    <section class="instagram">
+        <h2 class="animate">Veja o anúncio oficial no Instagram</h2>
+        <div class="instagram-container animate">
+            <iframe src="https://www.instagram.com/p/DTgcXZQFCAA/embed" width="100%" height="600" frameborder="0" scrolling="no" allowtransparency="true" title="Post do Instagram sobre Cartão Tio Dongo"></iframe>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2 class="animate">Fale diretamente comigo!</h2>
+        <p class="animate">Eu sou <strong>Deivid Curcio</strong>, promotor de vendas do Cartão Tio Dongo Afinz Visa.<br>
+        Tire suas dúvidas e solicite o seu cartão agora mesmo.</p>
+        <a href="https://wa.me/5522999604947?text=Ol%C3%A1%20Deivid%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20o%20Cart%C3%A3o%20Tio%20Dongo%20Afinz%20Visa!" class="btn-whatsapp animate" target="_blank" rel="noopener noreferrer">
+            📱 WhatsApp: (22) 99960-4947
+        </a>
+    </section>
+
+    <a href="https://wa.me/5522999604947?text=Ol%C3%A1%20Deivid%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20o%20Cart%C3%A3o!" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco pelo WhatsApp">
+        📱
+    </a>
+
+    <footer>
+        © 2026 Deivid Curcio - Promotor de Vendas Cartão Tio Dongo Afinz Visa<br>
+        Parceria Tio Dongo & Afinz
+    </footer>
+
+    <!-- Script para animações ao scroll -->
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.animate').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+
+</body>
+</html>
